@@ -1,20 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './button.css';
+import React from "react";
+import PropTypes from "prop-types";
 
+/**
+ * It's a function that takes in a label and an array of options, and returns a dropdown menu with the
+ * label as the title and the options as the options
+ */
 export const Dropdown = ({ label, options }) => {
   return (
-    <div className='dropdown'>
+    <div className="dropdown">
       {" "}
-      <label for={label}>{label}</label>
+      <label hmtlfor={label}>{label}</label>
       <select name={label} id={label}>
-        {options.forEach((option) => {
-          <option>{option}</option>;
+        {options.map((opt) => {
+          return <option value={opt}>{opt}</option>;
         })}
       </select>
     </div>
   );
-}
+};
 
 Dropdown.propTypes = {
   /**
