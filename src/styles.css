@@ -1,0 +1,20 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.dropdown label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.dropdown select {
+  text-align: left;
+  white-space: nowrap;
+  width: 14em;
+  padding: 0.4em 1em;
+  display: inline-block;
+  text-transform: capitalize;
+}
