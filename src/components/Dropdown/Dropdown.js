@@ -12,7 +12,7 @@ export const Dropdown = ({ label, options }) => {
       <label hmtlfor={label}>{label}</label>
       <select name={label} id={label}>
         {options.map((opt, index) => {
-          return <option key={index} value={opt}>{opt}</option>;
+          return <option key={index} value={opt.value}>{opt.name}</option>;
         })}
       </select>
     </div>

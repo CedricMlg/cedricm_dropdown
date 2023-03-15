@@ -11,5 +11,9 @@ const Template = (args) => <Dropdown {...args} />;
 export const main = Template.bind({});
 main.args = {
   label: "dropdown",
-  options: ["option1", "option2", "option3"],
+  options: [
+    { value: "opt1", name: "option1" },
+    { value: "opt2", name: "option2" },
+    { value: "opt3", name: "option3" },
+  ],
 };
