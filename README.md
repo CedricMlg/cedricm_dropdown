@@ -54,6 +54,30 @@ The options is an array of objects where you specify what you want to be display
 ![Openend dropdown](https://github.com/CedricMlg/wealthhealth_dropdown/blob/master/public/opened-dropdown.png) <br />
 Simply add as many options as you need to choose from.
 
+### Get the selected value
+
+Here is an example of how to get the value that was selected:
+
+   ```sh
+    import React, { useState } from "react";
+    import { Dropdown } from "cedricm-wealthhealth-dropdown";
+    
+    function App() {
+     const [value, setValue] = useState("");
+     
+     function handleChange(value) {
+       setValue(value)
+     }
+     
+     return (
+       <div className="dropdown">
+          <Dropdown {...argument} onChange={handleChange} />
+       </div>
+     );
+    }
+   ```
+Keep in mind that the value returned is going to be what you've put in the VALUE field inside the objects of your options array.
+
 
 I hope this was usefull, if you found this on npm the git repo is at https://github.com/CedricMlg/wealthhealth_dropdown <br />
 thank you for reading and happy coding !!
