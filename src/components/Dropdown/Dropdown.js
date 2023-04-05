@@ -17,8 +17,8 @@ export const Dropdown = ({ label, options, onChange }) => {
       <select onChange={handleChange} name={label} id={label}>
         {options.map((opt, index) => {
           return (
-            <option key={index} value={opt.value}>
-              {opt.name}
+            <option key={index} value={Object.values(opt)[0]}>
+              {Object.values(opt)[1]}
             </option>
           );
         })}
