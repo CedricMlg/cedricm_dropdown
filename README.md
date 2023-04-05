@@ -51,6 +51,7 @@ This is the way you need to create you argument to make it work:
 The label is basicaly the title of your dropdown. <br />
 ![Closed dropdown](https://github.com/CedricMlg/cedricm_dropdown/blob/master/public/closed-dropdown.png) <br />
 The options is an array of objects where you specify what you want to be displayed in the select, the value will be the value of your option and the name will be what's written in the select. <br />
+Be carefull the order needs to be { value , name } if it's { name , value } the value will be what's written in the select. <br />
 ![Openend dropdown](https://github.com/CedricMlg/cedricm_dropdown/blob/master/public/opened-dropdown.png) <br />
 Simply add as many options as you need to choose from.
 
